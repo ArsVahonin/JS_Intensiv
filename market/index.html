@@ -1,72 +1,187 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Delivery Food</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header-box">
-                <div class="header-logo logo">
-                    <img src="images/logo.png" alt="logo">
-                </div>
-                <div class="header-buttons flex">
-                    <div class="button button-active flex"><img src="images/user.svg" alt="">Войти</div>
-                    <div class="button flex"><img src="images/shopping-cart.svg" alt="">Корзина</div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="main">
-        <div class="container">container</div>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-box flex">
-                <div class="footer-logo logo">
-                    <img src="images/logo.png" alt="logo">
-                </div>
-                <div class="footer-nav">
-                    <ul class="footer-list flex">
-                        <li class="footer-item">
-                            <a href="#" target="_blank" class="footer-link">Ресторанам</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" target="_blank" class="footer-link">Курьерам</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" target="_blank" class="footer-link">Пресс-центр</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" target="_blank" class="footer-link">Контакты</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <ul class="social flex">
-                        <li class="social-item">
-                            <a href="#" target="_blank" class="social-link">
-                                <img src="images/facebook.svg" alt="facebook">
-                            </a>
-                        </li>
-                        <li class="social-item">
-                            <a href="#" target="_blank" class="social-link">
-                                <img src="images/instagram.svg" alt="instagram">
-                            </a>
-                        </li>
-                        <li class="social-item">
-                            <a href="#" target="_blank" class="social-link">
-                                <img src="images/vk.svg" alt="vkontakte">
-                            </a>
-                        </li>
-                    </ul>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-box">
+                    <div class="header-logo logo">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                    <div class="header-buttons flex">
+                        <div class="button button-active flex"><img src="images/user.svg" alt="">Войти</div>
+                        <div class="button flex"><img src="images/shopping-cart.svg" alt="">Корзина</div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </header>
+        <main class="main">
+            <section class="banner">
+                <div class="container">
+<div class="banner-item">
+    <h2 class="banner-item-title">
+        Онлайн-сервис <br>дом еды на дом
+    </h2>
+    <p class="banner-item-subtittle">
+        Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком
+    </p>
+</div>
+                </div>
+            </section>
+            <section class="products">
+                <div class="container">
+                <div class="main-box">
+                    <div class="main-info flex">
+                        <div class="main-title">
+                            <h3 class="main-title-text">Рестораны</h3>
+                        </div>
+                        <div class="search-container">
+                            <input type="text" placeholder="Поиск блюд и ресторанов" class="search-input" id="searchInput" />
+                        </div>
+                    </div>
+                    <div class="main-cards flex">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/cards/restaraunt/PizzaPlus.jpg" alt="Пицца Плюс">
+                            </div>
+                            <div class="card-text flex">
+                                <div class="card-title">Пицца плюс</div>
+                                <div class="card-subtitle">50 мин</div>
+                            </div>
+                            <div class="card-description flex">
+                                <p class="card-description-ratio"><img src="images/star.svg" alt="" srcset=""> 4.5</p>
+                                <p class="card-description-text">От 900 &#8381; &#8226; Пицца</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/cards/restaraunt/Tanuki.jpg" alt="Тануки">
+                            </div>
+                            <div class="card-text flex">
+                                <div class="card-title">Пицца плюс</div>
+                                <div class="card-subtitle">50 мин</div>
+                            </div>
+                            <div class="card-description flex">
+                                <p class="card-description-ratio"><img src="images/star.svg" alt="" srcset=""> 4.5</p>
+                                <p class="card-description-text">От 900 &#8381; &#8226; Пицца</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/cards/restaraunt/FoodBand.jpg" alt="FoodBand">
+                            </div>
+                            <div class="card-text flex">
+                                <div class="card-title">Пицца плюс</div>
+                                <div class="card-subtitle">50 мин</div>
+                            </div>
+                            <div class="card-description flex">
+                                <p class="card-description-ratio"><img src="images/star.svg" alt="" srcset=""> 4.5</p>
+                                <p class="card-description-text">От 900 &#8381; &#8226; Пицца</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/cards/restaraunt/Zhadina.jpg" alt="Жадина-пицца">
+                            </div>
+                            <div class="card-text flex">
+                                <div class="card-title">Пицца плюс</div>
+                                <div class="card-subtitle">50 мин</div>
+                            </div>
+                            <div class="card-description flex">
+                                <p class="card-description-ratio"><img src="images/star.svg" alt="" srcset=""> 4.5</p>
+                                <p class="card-description-text">От 900 &#8381; &#8226; Пицца</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/cards/restaraunt/TochkaEdi.jpg" alt="Точка еды">
+                            </div>
+                            <div class="card-text flex">
+                                <div class="card-title">Пицца плюс</div>
+                                <div class="card-subtitle">50 мин</div>
+                            </div>
+                            <div class="card-description flex">
+                                <p class="card-description-ratio"><img src="images/star.svg" alt="" srcset=""> 4.5</p>
+                                <p class="card-description-text">От 900 &#8381; &#8226; Пицца</p>
+                            </div>
+                        </div>
+                             <div class="card">
+                            <div class="card-img">
+                                <img src="images/cards/restaraunt/PizzaBurger.jpg" alt="PizzaBurger">
+                            </div>
+                            <div class="card-text flex">
+                                <div class="card-title">Пицца плюс</div>
+                                <div class="card-subtitle">50 мин</div>
+                            </div>
+                            <div class="card-description flex">
+                                <p class="card-description-ratio"><img src="images/star.svg" alt="" srcset=""> 4.5</p>
+                                <p class="card-description-text">От 900 &#8381; &#8226; Пицца</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-box flex">
+                    <div class="footer-logo logo">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                    <div class="footer-nav">
+                        <ul class="footer-list flex">
+                            <li class="footer-item">
+                                <a href="#" target="_blank" class="footer-link">Ресторанам</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" target="_blank" class="footer-link">Курьерам</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" target="_blank" class="footer-link">Пресс-центр</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" target="_blank" class="footer-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <ul class="social flex">
+                            <li class="social-item">
+                                <a href="#" target="_blank" class="social-link">
+                                    <img src="images/facebook.svg" alt="facebook">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" target="_blank" class="social-link">
+                                    <img src="images/instagram.svg" alt="instagram">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" target="_blank" class="social-link">
+                                    <img src="images/vk.svg" alt="vkontakte">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
 </body>
+
 </html>
