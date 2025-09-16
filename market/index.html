@@ -9,8 +9,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <!-- <script src="script.js"></script> -->
+     <script src="script/index.js" defer></script>
+
 
     <title>Delivery Food</title>
 </head>
@@ -24,8 +26,8 @@
                         <img src="images/logo.png" alt="logo">
                     </a>
                     <div class="header-buttons flex">
-                        <button class="button button-active flex"><img src="images/user.svg" alt="">Войти</button>
-                        <button class="button flex" id="cart"><img src="images/shopping-cart.svg" alt="">Корзина</button>
+                        <button class="button button-active flex"><img src="images/icons/user.svg" alt="">Войти</button>
+                        <button class="button flex" id="cart"><img src="images/icons/shopping-cart.svg" alt="">Корзина</button>
                     </div>
                 </div>
             </div>
@@ -55,7 +57,7 @@
                                     id="searchInput" />
                             </div>
                         </div>
-                        <div class="cards-container flex">
+                        <div class="cards-container flex" id="cardsContainer">
                             <a href="goods.html" class="card">
                                 <div class="card-img">
                                     <img src="images/cards/restaraunt/PizzaPlus.jpg" alt="Пицца Плюс">
@@ -65,7 +67,7 @@
                                     <div class="card-subtitle">50 мин</div>
                                 </div>
                                 <div class="card-description flex">
-                                    <p class="card-description-ratio"><img src="images/star.svg" alt="" srcset=""> 4.5
+                                    <p class="card-description-ratio"><img src="images/icons/star.svg" alt="" srcset=""> 4.5
                                     </p>
                                     <p class="card-description-price">От 900 &#8381;</p>
                                     <p class="card-description-group">Пицца</p>
@@ -76,11 +78,11 @@
                                     <img src="images/cards/restaraunt/Tanuki.jpg" alt="Тануки">
                                 </div>
                                 <div class="card-text flex">
-                                    <div class="card-title">Тануки</div>
+                                    <div class="card-title"></div>
                                     <div class="card-subtitle">50 мин</div>
                                 </div>
                                 <div class="card-description flex">
-                                    <p class="card-description-ratio"><img src="images/star.svg" alt="" srcset=""> 4.5
+                                    <p class="card-description-ratio"><img src="images/icons/star.svg" alt="" srcset=""> 4.5
                                     </p>
                                     <p class="card-description-price">От 900 &#8381;</p>
                                     <p class="card-description-group">Пицца</p>
@@ -95,7 +97,7 @@
                                     <div class="card-subtitle">50 мин</div>
                                 </div>
                                 <div class="card-description flex">
-                                    <p class="card-description-ratio"><img src="images/star.svg" alt="" srcset=""> 4.5
+                                    <p class="card-description-ratio"><img src="images/icons/star.svg" alt="" srcset=""> 4.5
                                     </p>
                                     <p class="card-description-price">От 900 &#8381;</p>
                                     <p class="card-description-group">Пицца</p>
@@ -110,7 +112,7 @@
                                     <div class="card-subtitle">50 мин</div>
                                 </div>
                                 <div class="card-description flex">
-                                    <p class="card-description-ratio"><img src="images/star.svg" alt="" srcset=""> 4.5
+                                    <p class="card-description-ratio"><img src="images/icons/star.svg" alt="" srcset=""> 4.5
                                     </p>
                                     <p class="card-description-price">От 900 &#8381;</p>
                                     <p class="card-description-group">Пицца</p>
@@ -125,7 +127,7 @@
                                     <div class="card-subtitle">50 мин</div>
                                 </div>
                                 <div class="card-description flex">
-                                    <p class="card-description-ratio"><img src="images/star.svg" alt="" srcset=""> 4.5
+                                    <p class="card-description-ratio"><img src="images/icons/star.svg" alt="" srcset=""> 4.5
                                     </p>
                                     <p class="card-description-price">От 900 &#8381;</p>
                                     <p class="card-description-group">Пицца</p>
@@ -140,7 +142,7 @@
                                     <div class="card-subtitle">50 мин</div>
                                 </div>
                                 <div class="card-description flex">
-                                    <p class="card-description-ratio"><img src="images/star.svg" alt="" srcset=""> 4.5
+                                    <p class="card-description-ratio"><img src="images/icons/star.svg" alt="" srcset=""> 4.5
                                     </p>
                                     <p class="card-description-price">От 900 &#8381;</p>
                                     <p class="card-description-group">Пицца</p>
@@ -159,7 +161,7 @@
                         Корзина
                     </div>
                     <div class="cart-modal__header--close" id="close">
-                        <img src="images/exit.svg" alt="close window">
+                        <img src="images/icons/exit.svg" alt="close window">
                     </div>
                 </div>
                 <div class="cart-modal__body">
@@ -283,17 +285,17 @@
                         <ul class="social flex">
                             <li class="social-item">
                                 <a href="#" target="_blank" class="social-link">
-                                    <img src="images/facebook.svg" alt="facebook">
+                                    <img src="images/icons/facebook.svg" alt="facebook">
                                 </a>
                             </li>
                             <li class="social-item">
                                 <a href="#" target="_blank" class="social-link">
-                                    <img src="images/instagram.svg" alt="instagram">
+                                    <img src="images/icons/instagram.svg" alt="instagram">
                                 </a>
                             </li>
                             <li class="social-item">
                                 <a href="#" target="_blank" class="social-link">
-                                    <img src="images/vk.svg" alt="vkontakte">
+                                    <img src="images/icons/vk.svg" alt="vkontakte">
                                 </a>
                             </li>
                         </ul>
@@ -303,6 +305,7 @@
 
         </footer>
     </div>
+
 
 </body>
 

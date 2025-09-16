@@ -143,7 +143,7 @@ ul {
 
 .banner-item {
     background-color: #FFF1B8;
-    background-image: url(./images/banner/banner.png);
+    background-image: url(../images/banner/banner.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: center right;
@@ -208,7 +208,6 @@ ul {
     height: 100%;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .search-input {
@@ -216,7 +215,7 @@ ul {
     min-width: 306px;
     border-radius: 2px;
     border: 1px solid #D9D9D9;
-    background: url('./images/search.png') no-repeat left 10px center;
+    background: url('../images/icons/search.png') no-repeat left 10px center;
     padding-left: 35px;
 
 }
@@ -333,7 +332,7 @@ ul {
     row-gap: 10px;
     column-gap: 30px;
     margin: 24px 0 30px 0;
-}   
+}
 
 .card-text__row-controls--price {
     color: #000;
@@ -397,7 +396,6 @@ ul {
 .cart-modal__overlay.open {
     display: flex;
 }
-
 
 .cart-modal {
     width: 100%;
@@ -474,6 +472,7 @@ ul {
     align-items: center;
     gap: 10px;
 }
+
 .cart-modal__footer--total--price {
     padding: 15px 20px;
     color: #FAFAFA;
@@ -485,10 +484,10 @@ ul {
 }
 
 .cart-modal__footer--button {
-   display: flex;
-   align-items: center;
-   flex-wrap: wrap;
-   gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 
@@ -499,38 +498,42 @@ ul {
     .banner-item {
         background-image: none;
     }
+
     .banner-item-title {
         max-width: 100%;
     }
+
     .banner-item-subtittle {
         max-width: 100%;
     }
 
     .card {
-    width: calc((100% - 24px) / 2);
+        width: calc((100% - 24px) / 2);
     }
-    
+
 }
 
 @media (max-width: 991px) {
     .banner-item {
         background-image: none;
     }
+
     .banner-item-title {
         max-width: 100%;
     }
+
     .banner-item-subtittle {
         max-width: 100%;
     }
 
     .card {
-    width: calc((100% - 24px) / 2);
+        width: calc((100% - 24px) / 2);
     }
-    
+
 }
 
 @media (max-width: 768px) {
     .card {
-    width: 100%;
+        width: 100%;
     }
 }

@@ -9,8 +9,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="script/index.js" defer></script>
     <title>Delivery Food</title>
 </head>
 
@@ -23,8 +23,9 @@
                         <img src="images/logo.png" alt="logo">
                     </a>
                     <div class="header-buttons flex">
-                        <button class="button button-active flex"><img src="images/user.svg" alt="">Войти</button>
-                        <button class="button flex" id="cart"><img src="images/shopping-cart.svg" alt="">Корзина</button>
+                        <button class="button button-active flex"><img src="images/icons/user.svg" alt="">Войти</button>
+                        <button class="button flex" id="cart"><img src="images/icons/shopping-cart.svg"
+                                alt="">Корзина</button>
                     </div>
                 </div>
             </div>
@@ -38,12 +39,13 @@
                                 <h3 class="main-title-text">Тануки</h3>
                             </div>
                             <div class="main-title-ratio flex">
-                                <p class="card-description-ratio"><img src="images/star.svg" alt="" srcset=""> 4.5</p>
+                                <p class="card-description-ratio"><img src="images/icons/star.svg" alt="" srcset=""> 4.5
+                                </p>
                                 <p class="card-description-price">От 900 &#8381;</p>
                                 <p class="card-description-group">Пицца и суши</p>
                             </div>
                         </div>
-                        <div class="cards-container flex">
+                        <div class="cards-container flex" id="productCardsContainer">
                             <div class="card">
                                 <div class="card-img">
                                     <img src="images/cards/goods/Ugor.jpg" alt="Угорь">
@@ -62,7 +64,8 @@
                                     <div class="card-text__row">
                                         <div class="card-text__row-controls flex">
                                             <div class="button button-active flex">Корзина <img
-                                                    src="images/shopping-cart-white.svg" alt="Shopping cart"></div>
+                                                    src="images/icons/shopping-cart-white.svg" alt="Shopping cart">
+                                            </div>
                                             <span class="card-text__row-controls--price">250 &#8381;</span>
                                         </div>
                                     </div>
@@ -80,13 +83,14 @@
                                     </div>
                                     <div class="card-text__row ">
                                         <p class="card-text__row--text">
-                                            РРис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.
+                                            Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.
                                         </p>
                                     </div>
                                     <div class="card-text__row">
                                         <div class="card-text__row-controls flex">
                                             <div class="button button-active flex">Корзина <img
-                                                    src="images/shopping-cart-white.svg" alt="Shopping cart"></div>
+                                                    src="images/icons/shopping-cart-white.svg" alt="Shopping cart">
+                                            </div>
                                             <span class="card-text__row-controls--price">395 &#8381;</span>
                                         </div>
                                     </div>
@@ -110,7 +114,8 @@
                                     <div class="card-text__row">
                                         <div class="card-text__row-controls flex">
                                             <div class="button button-active flex">Корзина <img
-                                                    src="images/shopping-cart-white.svg" alt="Shopping cart"></div>
+                                                    src="images/icons/shopping-cart-white.svg" alt="Shopping cart">
+                                            </div>
                                             <span class="card-text__row-controls--price">250 &#8381;</span>
                                         </div>
                                     </div>
@@ -134,7 +139,8 @@
                                     <div class="card-text__row">
                                         <div class="card-text__row-controls flex">
                                             <div class="button button-active flex">Корзина <img
-                                                    src="images/shopping-cart-white.svg" alt="Shopping cart"></div>
+                                                    src="images/icons/shopping-cart-white.svg" alt="Shopping cart">
+                                            </div>
                                             <span class="card-text__row-controls--price">250 &#8381;</span>
                                         </div>
                                     </div>
@@ -158,7 +164,8 @@
                                     <div class="card-text__row">
                                         <div class="card-text__row-controls flex">
                                             <div class="button button-active flex">Корзина <img
-                                                    src="images/shopping-cart-white.svg" alt="Shopping cart"></div>
+                                                    src="images/icons/shopping-cart-white.svg" alt="Shopping cart">
+                                            </div>
                                             <span class="card-text__row-controls--price">250 &#8381;</span>
                                         </div>
                                     </div>
@@ -166,7 +173,7 @@
                             </div>
                             <div class="card">
                                 <div class="card-img">
-                                    <img src="images/cards/goods/SrimpRoll.jpg" alt="Креветка">
+                                    <img src="images/cards/goods/ShrimpRoll.jpg" alt="Креветка">
                                 </div>
                                 <div class="card-text flex">
                                     <div class="card-text__row">
@@ -182,7 +189,8 @@
                                     <div class="card-text__row">
                                         <div class="card-text__row-controls flex">
                                             <div class="button button-active flex">Корзина <img
-                                                    src="images/shopping-cart-white.svg" alt="Shopping cart"></div>
+                                                    src="images/icons/shopping-cart-white.svg" alt="Shopping cart">
+                                            </div>
                                             <span class="card-text__row-controls--price">250 &#8381;</span>
                                         </div>
                                     </div>
@@ -201,7 +209,7 @@
                         Корзина
                     </div>
                     <div class="cart-modal__header--close" id="close">
-                        <img src="images/exit.svg" alt="close window">
+                        <img src="images/icons/exit.svg" alt="close window">
                     </div>
                 </div>
                 <div class="cart-modal__body">
@@ -325,17 +333,17 @@
                         <ul class="social flex">
                             <li class="social-item">
                                 <a href="#" target="_blank" class="social-link">
-                                    <img src="images/facebook.svg" alt="facebook">
+                                    <img src="images/icons/facebook.svg" alt="facebook">
                                 </a>
                             </li>
                             <li class="social-item">
                                 <a href="#" target="_blank" class="social-link">
-                                    <img src="images/instagram.svg" alt="instagram">
+                                    <img src="images/icons/instagram.svg" alt="instagram">
                                 </a>
                             </li>
                             <li class="social-item">
                                 <a href="#" target="_blank" class="social-link">
-                                    <img src="images/vk.svg" alt="vkontakte">
+                                    <img src="images/icons/vk.svg" alt="vkontakte">
                                 </a>
                             </li>
                         </ul>
