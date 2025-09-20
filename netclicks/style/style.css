@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: #000000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 0;
+    padding: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.page-wrapper {
+    width: 100%;
+    max-width: 1194px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1194px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.header-box {
+    padding: 34px 0 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.logo-text {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.login {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+.header-cotrols--mobile {
+    display: none;
+}
+
+.login:hover {
+    color: rgba(255, 73, 73, 1)
+}
+
+.header-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background: rgba(255, 73, 73, 1);
+    padding: 3px;
+    gap: 3px;
+    height: 50px;
+}
+
+.header-search input {
+    padding: 0 30px;
+    border: none;
+    flex-grow: 1;
+    height: 100%;
+    outline: none;
+    border-radius: 3px;
+    min-width: 0;
+}
+
+
+.header-search button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: rgba(255, 73, 73, 1);
+    cursor: pointer;
+    height: 100%;
+    outline: none;
+    color: #FFF;
+    gap: 10px;
+    padding: 10px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.header-search button::after {
+    content: 'Найти';
+}
+
+
+@media screen and (max-width: 767px) {
+    .header-cotrols--mobile {
+        align-self: self-start;
+        display: block;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .header-search input {
+        padding: 0 15px;
+    }
+
+    .header-search button {
+        
+        gap: 0;
+    }
+
+    .header-search button::after {
+        content: '';
+    }
+    
+
+}
